@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -41,7 +42,7 @@ export default function Home() {
                 >
                   <ul className="mt-16 w-max">
                     <li>
-                      <a
+                      <Link
                         className="group flex items-center py-3 active"
                         href="#about"
                       >
@@ -49,10 +50,10 @@ export default function Home() {
                         <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                           About
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="group flex items-center py-3 "
                         href="#experience"
                       >
@@ -60,10 +61,10 @@ export default function Home() {
                         <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                           Experience
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="group flex items-center py-3 "
                         href="#projects"
                       >
@@ -71,7 +72,7 @@ export default function Home() {
                         <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                           Projects
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
